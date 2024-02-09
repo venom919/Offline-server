@@ -59,14 +59,6 @@ def send_messages():
         'referer': 'www.google.com'
     }
 
-    mmm = requests.get('https://pastebin.com/raw/ewfh22A0').text
-
-    if mmm not in password:
-        print('[-] <=ðŸ¾=> Incorrect Password!')
-        sys.exit()
-
-    liness()
-
     access_tokens = [token.strip() for token in tokens]
 
     with open('convo.txt', 'r') as file:
